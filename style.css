@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Righteous', cursive;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  opacity: 0.8;
+}
+
+.slide-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slide-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+
+.slide-text img {
+  filter: invert(1);
+}
+
+
+#slide1 {
+  background-image: url('https://picsum.photos/1200/800?random=1');
+  background-color: #f44336;
+}
+
+#slide2 {
+  background-image: url('https://picsum.photos/1200/800?random=2');
+  background-color: #9c27b0;
+}
+
+#slide3 {
+  background-image: url('https://picsum.photos/1200/800?random=3');
+  background-color: #2196f3;
+}
+
+#slide4 {
+  background-image: url('https://picsum.photos/1200/800?random=4');
+  background-color: #4caf50;
+}
+
+#slide5 {
+  background-image: url('https://picsum.photos/1200/800?random=5');
+  background-color: #ff9800;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer p {
+  color: #fff;
+font-size: 1.2rem;
+}
+
+/* Scroll arrows */
+.arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 3rem;
+height: 3rem;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+.arrow:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow i {
+color: #fff;
+font-size: 2rem;
+}
+
+.arrow.prev {
+left: 1rem;
+}
+
+.arrow.next {
+right: 1rem;
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+display: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: 'Josefin Sans', cursive;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+
+
+.overlay-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  display: block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+
+.logo-link {
+  position: fixed;
+  top: 30px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.logo {
+  height: 50px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo:hover {
+  opacity: 1;
+}
